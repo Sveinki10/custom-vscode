@@ -1,0 +1,69 @@
+.letterpress {
+  background-image: url("data:image/svg+xml,%3Csvg width='17' height='26' viewBox='0 0 17 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.22524 6.18461C3.13678 6.16987 3.052 6.15881 2.95985 6.15881H2.30006H1.62552C1.54811 6.15881 1.4744 6.16987 1.40068 6.18093C0.611876 6.29151 0 6.94761 0 7.74747V7.75853V14.4928V16.8113C0 16.8482 0.00737153 16.885 0.0110575 16.9219C0.0589754 17.5559 0.482863 18.0867 1.06894 18.2968C1.24218 18.3594 1.43016 18.4 1.62552 18.4H1.74347H3.08886C3.91452 18.4 4.58538 17.7439 4.58538 16.9367V7.75853V7.74747C4.58538 6.95867 3.99562 6.30994 3.22524 6.18461Z' fill='%23161616'/%3E%3Cpath d='M13.734 10.7707H15.3263C16.152 10.7707 16.8229 10.1036 16.8229 9.27792V4.59671C16.8229 3.77105 16.152 3.10389 15.3263 3.10389H13.734C12.9083 3.10389 12.2375 3.77105 12.2375 4.59671V9.27792C12.2375 10.1036 12.9046 10.7707 13.734 10.7707Z' fill='%23161616'/%3E%3Cpath d='M9.20747 0H7.61143C6.78208 0 6.11124 0.652421 6.11124 1.45965V24.2759C6.11124 25.0832 6.78208 25.7356 7.61143 25.7356H9.20747C10.0368 25.7356 10.7077 25.0832 10.7077 24.2759V1.45965C10.7077 0.652421 10.0331 0 9.20747 0Z' fill='%23161616'/%3E%3C/svg%3E%0A") !important;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.shortcuts {
+  display: none;
+}
+
+/* .quick-input-widget {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+.quick-input-header {
+  padding: 1rem;
+}
+.quick-input-list .monaco-scrollable-element {
+  padding: 0 1rem;
+} */
+
+/* Command Palette */
+.quick-input-widget {
+  transform: translateY(-50%) !important;
+  top: 50% !important;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.45) !important;
+  padding: 10px 10px 18px 10px !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  backdrop-filter: blur(3px) !important;
+  border-radius: 20px !important;
+}
+
+/* Remove background for lists */
+.monaco-list-rows {
+  background: transparent !important;
+}
+
+/* List hover */
+.monaco-list-row:hover {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.notifications-toasts .monaco-list-row:hover {
+  background: none !important;
+}
+
+.quick-input-filter .monaco-inputbox {
+  border-radius: 12px !important;
+  padding: 8px !important;
+  border: none !important;
+  background-color: rgba(34, 34, 34, 0.4) !important;
+  font-size: 14px !important;
+  margin-bottom: 16px !important;
+}
+
+#command-blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(8px);
+  z-index: 100;
+}
+
+.monaco-inputbox input::placeholder {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
